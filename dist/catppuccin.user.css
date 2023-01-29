@@ -13,7 +13,8 @@
 ==/UserStyle== */
 
 @-moz-document domain("mstdn.social"),
-               domain("fosstodon.org") {
+               domain("fosstodon.org"),
+               domain("mastodon.arch-linux.cz") {
 
   colourscheme(flavour) {
 
