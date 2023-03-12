@@ -19,11 +19,12 @@
 1. Install Stylus [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/styl-us/)/[Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) extension.
 2. Enable CSP Patching from Stylus Settings > Advanced.
 3. [Click here to install.](https://github.com/catppuccin/mastodon/raw/main/dist/catppuccin.user.css)
-
+4. Add urls to ```@-moz-document domain("url")``` with url being the url of your chosen server.
 #### Stylish
 1. Install Stylish [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/stylish/)/[Chrome](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe) extension.
 2. Create a new custom Style that applies to your desired mastodon instance.
 3. Copy content of [catppuccin.user.css](catppuccin.user.css) and paste to created Style.
+4. Add urls to ```@-moz-document domain("url")``` with url being the url of your chosen server.
 
 ## 💝 Thanks to
 
