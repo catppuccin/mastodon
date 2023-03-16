@@ -11,7 +11,28 @@
 	<a href="https://github.com/catppuccin/mastodon/contributors"><img src="https://img.shields.io/github/contributors/catppuccin/mastodon?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
 </p>
 
-> **Note** This theme is still under development.<br>The native light theme has some bugs right now, thus for now the better Latte experience actually is to enable Latte as your dark theme via the Stylus settings. Dark mode is fairly robust but also has some issues that have to be ironed out.
+<p align="center">
+  <img src="assets/preview.webp"/>
+</p>
+
+## Previews
+
+<details>
+<summary>🌻 Latte</summary>
+<img src="assets/latte.webp"/>
+</details>
+<details>
+<summary>🪴 Frappé</summary>
+<img src="assets/frappe.webp"/>
+</details>
+<details>
+<summary>🌺 Macchiato</summary>
+<img src="assets/macchiato.webp"/>
+</details>
+<details>
+<summary>🌿 Mocha</summary>
+<img src="assets/mocha.webp"/>
+</details>
 
 ## Usage
 
@@ -19,15 +40,25 @@
 1. Install Stylus [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/styl-us/)/[Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne) extension.
 2. Enable CSP Patching from Stylus Settings > Advanced.
 3. [Click here to install.](https://github.com/catppuccin/mastodon/raw/main/dist/catppuccin.user.css)
-
+4. Add urls to ```@-moz-document domain("url")``` with url being the url of your chosen server.
 #### Stylish
 1. Install Stylish [Firefox](https://addons.mozilla.org/en-GB/firefox/addon/stylish/)/[Chrome](https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe) extension.
 2. Create a new custom Style that applies to your desired mastodon instance.
 3. Copy content of [catppuccin.user.css](catppuccin.user.css) and paste to created Style.
+4. Add urls to ```@-moz-document domain("url")``` with url being the url of your chosen server.
+
+## 🙋 FAQ
+
+-	Q: **_"The theme does not look the same as the preview?"_**\
+	A: This maybe beacuse your Mastodon instance is using its own custom CSS, which is changing the look of the theme.
+
+-	Q: **_"Theme is not working?"_**\
+  A: One solution might be changing the theme from the prefrences > application > theme to light or dark. ![image](assets/help-theme.webp)
 
 ## 💝 Thanks to
 
 - [Andreas Grafen](https://github.com/andreasgrafen)
+- [Isabel](https://github.com/isabelroses)
 
 &nbsp;
 
