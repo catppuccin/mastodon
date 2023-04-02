@@ -2,7 +2,7 @@
 @name           Mastodon Catppuccin
 @namespace      github.com/catppuccin/mastodon
 @homepageURL    https://github.com/catppuccin/mastodon
-@version        1.1.0
+@version        1.1.1
 @description    Soothing pastel theme for Mastodon
 @author         Catppuccin
 @updateURL      https://github.com/catppuccin/mastodon/raw/main/dist/catppuccin.user.css
@@ -197,6 +197,8 @@ domain("mastodon.social") {
         }
 
 
+        .search-popout,
+        .search-popout em,
         .dismissable-banner__message,
         .account__header__bio .account__header__fields dt,
         .account__section-headline a.active,
@@ -218,6 +220,7 @@ domain("mastodon.social") {
         }
 
 
+        .search-popout span,
         .link-footer p,
         .link-footer p a {
             color: @subtext1;
@@ -366,6 +369,7 @@ domain("mastodon.social") {
         }
 
 
+        .search-popout,
         .drawer__header a:hover,
         .column-header__button:hover,
         .account__section-headline button:hover,
