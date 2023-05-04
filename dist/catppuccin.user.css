@@ -16,13 +16,25 @@ domain("fosstodon.org"),
 domain("tech.lgbt"),
 domain("mastodon.social") {
 
+    :root:has(.theme-mastodon-light) {
+        #mastodon(@lightFlavour, @accentColour);
+    }
 
-    .theme-default {
+    :root:has(.theme-default) {
         #mastodon(@darkFlavour, @accentColour);
     }
 
+    :root:has(.theme-contrast) {
+        #mastodon(@darkFlavour, @accentColour);
+    }
+
+
     .theme-mastodon-light {
         #mastodon(@lightFlavour, @accentColour);
+    }
+
+    .theme-default {
+        #mastodon(@darkFlavour, @accentColour);
     }
 
     .theme-contrast {
@@ -596,3 +608,4 @@ domain("mastodon.social") {
         }
     }
 }
+
