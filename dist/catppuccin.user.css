@@ -16,15 +16,31 @@ domain("fosstodon.org"),
 domain("tech.lgbt"),
 domain("mastodon.social") {
 
-
-    :root:has(.theme-default-light) {
+    :root:has(.theme-mastodon-light) {
         #mastodon(@lightFlavour, @accentColour);
     }
-    
+
     :root:has(.theme-default) {
         #mastodon(@darkFlavour, @accentColour);
     }
-        
+
+    :root:has(.theme-contrast) {
+        #mastodon(@darkFlavour, @accentColour);
+    }
+
+
+    .theme-mastodon-light {
+        #mastodon(@lightFlavour, @accentColour);
+    }
+
+    .theme-default {
+        #mastodon(@darkFlavour, @accentColour);
+    }
+
+    .theme-contrast {
+        #mastodon(@darkFlavour, @accentColour);
+    }
+
     #mastodon(@lookup, @accent) {
         @catppuccin: {
             @latte: {
@@ -168,14 +184,14 @@ domain("mastodon.social") {
         @mantle: @catppuccin[@@lookup][@mantle];
         @crust: @catppuccin[@@lookup][@crust];
         @accent-colour: @catppuccin[@@lookup][@@accent];
-    
+
         body,
         .tabs-bar__wrapper,
         .admin-wrapper .sidebar-wrapper__inner {
             background: @crust;
             color: @text;
         }
-        
+
         .account__header__bio .account__header__fields dt {
             background: transparent;
         }
@@ -592,3 +608,4 @@ domain("mastodon.social") {
         }
     }
 }
+
